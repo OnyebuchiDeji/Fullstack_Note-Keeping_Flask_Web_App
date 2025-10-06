@@ -1,0 +1,67 @@
+:root
+{
+    --bg_Col: black;
+    --fontCol: gainsboro;
+
+    --linkHoverCol: navajowhite;
+    --hoverCol2: peachpuff;
+    --hoverCol3: whitesmoke;
+    --hoeverCol4: papayawhip;
+}
+
+nav#navbar
+{
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    /* position; */
+    padding: 5px;
+
+    border: 2px solid whitesmoke;
+    justify-content: space-between;
+}
+
+nav#navbar button.navbar-toggle
+{
+    text-decoration: solid;
+    border: 2px solid peachpuff;
+    width: 50px;
+    font-size: 2rem;
+    text-decoration: solid;
+    color: gainsboro;
+    background-color: black;
+}
+
+nav#navbar button.navbar-toggle:hover
+{
+    font-size: 2rem;
+    text-decoration: solid;
+    color: black;
+    background-color: navajowhite;
+}
+
+nav#navbar div.navbar_item-container_collapsable
+{
+    /* border: 2px solid peachpuff; */
+
+    border: 2px solid papayawhip;
+    
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 85%;
+}
+nav#navbar div.navbar_item-container_collapsable a
+{
+    margin: 0px 10px 0px 10px;
+    color: whitesmoke;
+    font-size: x-large;
+    text-decoration: none;
+}
+nav#navbar div.navbar_item-container_collapsable a:hover
+{
+    margin: 0px 10px 0px 10px;
+    color: navajowhite;
+    text-decoration: overline;
+    /* text-shadow: ; */
+}

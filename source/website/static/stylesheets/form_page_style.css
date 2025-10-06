@@ -1,0 +1,62 @@
+/* 
+    For both sign up and login forms
+*/
+
+:root
+{
+    --bg_Col: black;
+    --fontCol: gainsboro;
+
+    --linkHoverCol: navajowhite;
+    --borderCol1: peachpuff;
+    --borderCol2: whitesmoke;
+    --borderCol3: papayawhip;
+    --borderCol3: mistyrose;
+    --borderCol5: mintcream;
+    --borderCol6: moccasin;;
+}
+
+#sign-up_form
+{
+    border: 3px solid whitesmoke;
+    padding: 10px 20px 10px 40px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+}
+
+#sign-up_form h3
+{
+    font-size: 2rem;
+}
+
+#sign-up_form div.form-group
+{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    margin: 20px 0px;
+    /* border: 2px solid peachpuff; */
+}
+
+#sign-up_form div.form-group input
+{
+    height: 120%;
+}
+
+#sign-up_form button.form-btn
+{
+    border: 2px solid papayawhip;
+
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    
+}
+
+#sign-up_form button.form-btn:hover
+{
+    background-color: mintcream;
+    color: black;
+    border-color: darkgray;
+}

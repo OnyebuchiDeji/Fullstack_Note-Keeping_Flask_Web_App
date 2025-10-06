@@ -1,0 +1,36 @@
+
+div[class^='alert']
+{
+    display: flex;
+    /* color: yellow; */
+    justify-content: space-between;
+    font-size: large;
+    padding: 10px 5px 10px 5px;
+}
+
+div[class^='alert'] button
+{
+    border: 2px solid none;
+    color: gainsboro;
+    background-color: black;
+    text-decoration: solid;
+    font-size: 1rem;
+}
+
+div[class^='alert'] button:hover
+{
+    text-decoration: solid;
+    color: black;
+    background-color: whitesmoke;
+}
+
+div.alert-error
+{
+    background-color: maroon;
+    color: yellow
+}
+div.alert-success
+{
+    background-color: midnightblue;
+    color: green;
+}

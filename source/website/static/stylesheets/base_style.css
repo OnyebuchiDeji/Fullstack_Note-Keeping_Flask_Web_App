@@ -1,0 +1,11 @@
+:root
+{
+    --bg_Col: black;
+    --fontCol: gainsboro;
+}
+
+body
+{
+    background-color: var(--bg_Col);
+    color: var(--fontCol);
+}

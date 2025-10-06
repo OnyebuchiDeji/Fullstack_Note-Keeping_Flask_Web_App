@@ -1,0 +1,106 @@
+:root
+{
+    --bg_Col: black;
+    --fontCol: gainsboro;
+
+    --linkHoverCol: navajowhite;
+    --borderCol1: peachpuff;
+    --borderCol2: whitesmoke;
+    --borderCol3: papayawhip;
+    --borderCol3: mistyrose;
+    --borderCol5: mintcream;
+    --borderCol6: moccasin;;
+}
+
+div#content-note
+{
+    /* display: block; */
+    /* padding: 10px 20px 10px 40px; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    text-align: center;
+}
+
+ul#notes_list
+{
+    /* border: 3px solid darkgrey; */
+    margin: 10px;
+    padding: 10px;
+
+
+    list-style-type:none;
+}
+
+ul#notes_list li.note_list-item
+{
+    border: 3px solid moccasin;
+    /* gap: 10px; */
+    margin: 10px auto;
+    
+    
+}
+
+ul#notes_list li.note_list-item button.btn-delete_note
+{
+    border: 2px solid none;
+    border-top-color: moccasin;
+    border-left-color: moccasin;
+    /* box-shadow: -2px -2px 1px moccasin; */
+    color: gainsboro;
+    background-color: black;
+    text-decoration: solid;
+    font-size: 1rem;
+}
+
+ul#notes_list li.note_list-item button.btn-delete_note:hover
+{
+    border: 1px solid none;
+    border-top-color: darkgrey;
+    border-left-color: darkgrey;
+    text-decoration: solid;
+    color: black;
+    background-color: whitesmoke;
+}
+
+form#note_form-container
+{
+    display: grid;
+    position:relative;
+    grid-auto-flow: row;
+    border: 3px solid whitesmoke;
+    max-width: 85%;
+    /* To centre a div or block element */
+    margin: auto;
+}
+
+
+
+form#note_form-container textarea#note-textarea
+{
+    border: 3px solid navajowhite;
+    width: calc(80% - 6px);
+    margin: auto;
+
+}
+
+
+form#note_form-container button.btn-note_add
+{
+    justify-self: center;
+    margin: 10px auto;
+    border: 2px solid papayawhip;
+    width: 7%;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    
+}
+
+form#note_form-container button.btn-note_add:hover
+{
+    background-color: mintcream;
+    color: black;
+    border-color: darkgray;
+}

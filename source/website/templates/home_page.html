@@ -1,0 +1,62 @@
+<!-- 
+    Continued: Sat-18-May-2024
+        Added notes!
+ -->
+
+
+{% extends "base_template.html" %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+    <div id="artifacts">
+        <h1>Home Page</h1>
+        
+        <p>This is the home page</p>
+        
+        <p>Passed argument from Python script: <b><em>{{text}}</em></b> </p>
+        
+        <p>Author: <b><em>{{author}}</em></b> </p>
+        {% if author ==  "Deji" %}
+            <p><b><em>It's true</em></b></p>
+        {% else %}
+            <p><b><em>It's not true</em></b></p>    
+        {% endif %}
+        
+        {% if user.is_authenticated %}
+            <h3><b><em>{{user.first_name}} has logged in</em></b></h3>
+        {%endif%}
+    </div>
+{%endblock%}
+
+{% block note_content %}
+    <!-- 
+        Displays all created notes in a list
+    -->
+
+    <h1 align="center">Notes</h1>
+    <ul id="notes_list">
+        {% for note in user.notes%}
+            <li class="note_list-item">
+                <h3><em>{{note.date_time}}</em></h3>
+                <div>{{ note.data }}</div>
+                <br>
+                <button type="button" class="btn-delete_note" onClick="deleteNote({{ note.id }})">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- This form sends a POST request to the url with the note -->
+    <form method="POST" id="note_form-container">
+        <h3 align="center">Add Notes</h3>
+        <textarea name="note" id="note-textarea"></textarea>
+        <br>
+        <button type="submit" class="btn-note_add">Add Note</button>
+    </form>
+
+
+{% endblock %}

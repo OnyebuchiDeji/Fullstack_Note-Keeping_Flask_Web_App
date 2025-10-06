@@ -1,0 +1,21 @@
+:root
+{
+    --bg_Col: black;
+    --fontCol: gainsboro;
+
+    --linkHoverCol: navajowhite;
+    --borderCol1: peachpuff;
+    --borderCol2: whitesmoke;
+    --borderCol3: papayawhip;
+}
+
+
+div#content-container
+{
+    border: 3px solid var(--borderCol3);
+}
+
+div#content-note
+{
+    border: 3px solid var(--borderCol2);
+}
