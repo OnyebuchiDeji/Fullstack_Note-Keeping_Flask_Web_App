@@ -32,11 +32,11 @@ Run `pip install flask flask-login flask-sqlalchemy`
     database using Python.
 
 ###	Screenshots
-![1](./scrn_shots/scrn_shot (1).png)
-![2](./scrn_shots/scrn_shot (2).png)
-![3](./scrn_shots/scrn_shot (3).png)
-![4](./scrn_shots/scrn_shot (4).png)
-![5](./scrn_shots/scrn_shot (5).png)
+![1](./scrn_shots/scrn_shot_1.png)
+![2](./scrn_shots/scrn_shot_2.png)
+![3](./scrn_shots/scrn_shot_3.png)
+![4](./scrn_shots/scrn_shot_4.png)
+![5](./scrn_shots/scrn_shot_5.png)
 
 ###	References
 Tech With Tim (2021), "Python Website Full Tutorial - Flask, Aunthentication, Databases", [Youtube]
